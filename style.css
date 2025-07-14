@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #fff;
+}
+
+#miralla { max-width: 1200px; }
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.ramo {
+  display: inline-block;
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 8px;
+  width: 220px;
+  height: 120px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .2s, color .2s;
+  background-color: #ffc0cb;
+  color: #222;
+  position: relative;
+}
+
+.ramo.done {
+  background-color: #aaa;
+  color: #fff;
+}
+
+.ramo.done::after {
+  content: '✖';
+  font-size: 40px;
+  color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
